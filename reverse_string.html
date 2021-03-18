@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reversing AnyString</title>
+</head>
+<body>
+    
+    <h1>JavaScript: Reverse a given string</h1>
+    <P>Enter Any Word: <input type="text" id="first"></P>
+    <button id="btn">Click Me!</button>
+    <h1 id="tag">The reverse word will given below:</h1>
+    <h2 id="result"></h2>
+
+<script>
+document.getElementById('btn').addEventListener('click', function(){
+    var word= document.getElementById('first').value;
+    var result= word.split("").reverse().join("");
+    document.getElementById('result').innerHTML = result;
+    document.getElementById('tag').innerHTML=('The reverse word of' +' ' +word);
+    document.getElementById('result').style.color='red';
+})
+</script>
+
+</body>
+</html>
